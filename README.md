@@ -46,33 +46,27 @@ You should get a successful build with no errors.
 
 ## Customizing your project
 
-1) Use Eclipse code refactor to rename the top-level package to match your own domain name.
-
-**IMPORTANT** : Remember to select all of the options in the refactor -> rename dialog. 
-This will ensure that all metadata files get properly updated as well (such as spring config files).
-	
-
-2) Set the name of the web application artifact this project will generate. Open web/pom.xml and look for the following XML snippet:
+1) Set the name of the web application artifact this project will generate. Open web/pom.xml and look for the following XML snippet:
 
 `<warName>singleModuleSample</warName>`
 
 Change the warName property to an application name of your choosing.
 
-3) Setup your forceDatabase.properties file, in src/main/resources/
+2) Setup your forceDatabase.properties file, in src/main/resources/
 
 Instructions on setting up this file are included as comments within the file itself.
 
-4) Build your application for the first time, with your customizations. Application artifact is in target/
+3) Build your application for the first time, with your customizations. Application artifact is in target/
 
 mvn -DskipTests clean install
 
-5) Deploy your application to VMForce for the first time, in order to setup the oAuth authentication credentials.
+4) Deploy your application to VMForce for the first time, in order to setup the oAuth authentication credentials.
 
 See instructions [here](https://github.com/forcedotcom/vmforce/wiki) if you need help deploying an application.
 
-6) Customize the oauth.properties file in src/main/resources
+5) Customize the oauth.properties file in src/main/resources
 
-7) Now rebuild and redeploy your application, with the customized oauth credentials.
+6) Now rebuild and redeploy your application, with the customized oauth credentials.
 
 
 ## Test drive

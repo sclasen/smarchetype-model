@@ -74,7 +74,7 @@ See instructions [here](https://github.com/forcedotcom/vmforce/wiki) if you need
 
 2) Example test, locally:
 
-http://localhost:8080/login
+http://localhost:8080/sampleWebApp
 
 ## IMPORTANT NOTES
 

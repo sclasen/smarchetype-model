@@ -245,9 +245,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<warName>singleModuleSample</warName>
-				</configuration>
 			</plugin>
 
 			<plugin>

@@ -33,11 +33,4 @@ public class SampleController {
 		
 		return "dogOwners";
 	}
-	
-	@RequestMapping(value="/logoutSuccess", method=RequestMethod.GET)
-	public String logoutSuccess (ModelAndView mv, HttpServletRequest request, HttpServletResponse response) {
-		// Do any additional cleanup that might be prudent...
-		
-		return "logoutSuccess";
-	}
 }

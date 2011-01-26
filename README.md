@@ -11,7 +11,6 @@ This is a single module web application, with functionality broken up simply by 
 
 * com.vmforce.samples.dao
 * com.vmforce.samples.entity
-* com.vmforce.samples.service
 
 ## Creating a new project from an archetype
 

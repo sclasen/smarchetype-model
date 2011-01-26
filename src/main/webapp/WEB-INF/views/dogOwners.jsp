@@ -30,6 +30,6 @@
 	%>
 	
 	<p/>
-	<a href="/logout">Logout</a>
+	<a href="../logout">Logout</a>
 </BODY>
 </HTML>

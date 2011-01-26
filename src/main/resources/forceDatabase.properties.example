@@ -5,5 +5,4 @@
 # You can obtain a token from within the Admin console, Setup -> My Personal Information -> Reset my Security Token
 # You are also emailed a new security token any time you change your force.com password.
 
-# See https://sites.google.com/a/salesforce.com/java/specs/sfdc-service-binding/jpa-connection-setup?AuthEventSource=SSO
 url=force://vmf01.t.salesforce.com/services/Soap/u/20.0;user=<your username>;password=<your password>

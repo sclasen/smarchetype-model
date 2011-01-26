@@ -9,22 +9,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.vmforce.samples.entity.SampleCustomer;
-import com.vmforce.samples.service.SampleCustomerService;
+import com.vmforce.samples.dao.SampleDogOwnerDAO;
+import com.vmforce.samples.entity.SampleDogOwner;
 
 @Controller
 public class SampleController {
 	
 	@Inject
-	private SampleCustomerService customerService; 
+	private SampleDogOwnerDAO dao; 
 	
-	@RequestMapping(value="/secure/customers", method=RequestMethod.GET)
-	public String listCustomers (Model model) {
-		List<SampleCustomer> customers = customerService.findAllCustomers();
-		model.addAttribute("customers", customers);
+	@RequestMapping(value="/secure/dogOwners", method=RequestMethod.GET)
+	public String listDogOwners (Model model) {
+		List<SampleDogOwner> dogOwners = dao.getAllDogOwners();
+		model.addAttribute("dogOwners", dogOwners);
 		
-		System.out.println("Service, customers = " + customers);
-		
-		return "customerList";
+		return "dogOwners";
 	}
 }

@@ -28,8 +28,6 @@
     	<property name="connectionName" value="JPAConfiguredConnection"/>
     </bean>
     
-	<bean id="sampleCustomerDAO" class="com.vmforce.samples.dao.SampleCustomerDAOImpl"/>
-	
-	<bean id="sampleCustomerService" class="com.vmforce.samples.service.SampleCustomerServiceImpl"/>
+	<bean id="sampleDogOwnerDAO" class="com.vmforce.samples.dao.SampleDogOwnerDAOImpl"/>
 	
 </beans>
